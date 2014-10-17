@@ -3,7 +3,7 @@
     "name": "ndbc",
     "long_name": "National Data Buoy Center",
     "description": "The National Data Buoy Center (NDBC) distributes meteorological data from moored buoys maintained by NDBC and others. Moored buoys are the weather sentinels of the sea. They are deployed in the coastal and offshore waters from the western Atlantic to the Pacific Ocean around Hawaii, and from the Bering Sea to the South Pacific. NDBC's moored buoys measure and transmit barometric pressure; wind direction, speed, and gust; air and sea temperature; and wave energy spectra from which significant wave height, dominant wave period, and average wave period are derived. Even the direction of wave propagation is measured on many moored buoys.",
-    "url": "http://sdf.ndbc.noaa.gov/"
+    "url": "http://dods.ndbc.noaa.gov/"
   },
   {
     "name": "co-ops",
