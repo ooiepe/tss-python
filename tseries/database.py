@@ -191,11 +191,13 @@ class Database(object):
       self.cursor.execute(sql, [ erddap_url, active, time.strftime('%Y-%m-%d %H:%M:%S'),sensor_id] )
       print "Updated Sensor: " +str(station_id) + "-" + str(parameter_id)
 
-  def find_sensors_by_station(self, network, station):
+  def find_sensors_by_station(self, network, station, active=1):
     """Find the sensors for a specified network/station"""
     station_id = self.find_station(network, station)
     if station_id:
       sql = """SELECT id,parameter_id FROM sensors WHERE station_id=%s"""
+      if active:
+        sql += """ AND active=1"""
       self.cursor.execute(sql,[station_id])
       if self.cursor.rowcount > 0:
         return self.cursor.fetchall()
